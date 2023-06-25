@@ -1,5 +1,5 @@
 const express=require('express')
-
+const port=process.env.port;
 const app=new express();
 
 app.get('/',(req,res)=>{
@@ -8,6 +8,6 @@ app.get('/',(req,res)=>{
 })
 
 
-app.listen(3005,()=>{
-    console.log('listinging port 3005')
+app.listen(port,()=>{
+    console.log('listinging port')
 })
